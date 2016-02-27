@@ -1,0 +1,43 @@
+<template name="Controls">
+  <h2>Controls</h2>
+
+  <h3>Close Button</h3>
+  <div class="callout" data-closable>
+    {{> zfCloseX}}
+  </div>
+
+  <h3>Slider</h3>
+  <div class="row">
+    <div class="small-3 columns">
+      <h4>Basic</h4>
+      {{> zfSlider start=5 end=100 name='basic'}}
+    </div>
+    <div class="small-3 columns">
+      <h4>Vertical</h4>
+      {{> zfSlider start=5 end=100 vertical=true name='vertical'}}
+    </div>
+    <div class="small-3 columns">
+      <h4>Two Handles</h4>
+      {{> zfSlider lStart=20 rStart=60 end=100 lName='lInput' rName='rInput'}}
+    </div>
+    <div class="small-3 columns">
+      <h4>Data Binding</h4>
+      {{> zfSliderInput id='lInput'}}
+      {{> zfSlider lStart=20 rStart=60 end=100 lInput='lInput' rInput='rInput'}}
+      {{> zfSliderInput id='rInput'}}
+    </div>
+  </div>
+
+  <h3>Switch</h3>
+  <div class="row">
+    <div class="small-6 columns">
+      <h4>Checkbox</h4>
+      {{> zfSwitch id='switch'}}
+    </div>
+    <div class="small-6 columns">
+      <h4>Radio</h4>
+      {{> zfSwitchRadio id='radio1' name='radio'}}
+      {{> zfSwitchRadio id='radio2' name='radio'}}
+    </div>
+  </div>
+</template>

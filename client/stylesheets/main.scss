@@ -1,0 +1,14 @@
+@import '{zurb:foundation-sites}/scss/foundation';
+@include foundation-everything;
+
+body {
+  margin-bottom: 2em;
+}
+
+.slider.vertical {
+  height: 6.5rem;
+}
+
+.orbit-slide > div {
+  border: 1px solid black;
+}

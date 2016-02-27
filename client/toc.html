@@ -1,0 +1,15 @@
+<template name="ToC">
+  <h2>Table of Contents</h2>
+  <div class="row">
+    {{#each groups}}
+      <div class="small-3 columns">
+        <p>{{name}}</p>
+        <ul>
+          {{#each components}}
+            <li>{{name}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    {{/each}}
+  </div>
+</template>

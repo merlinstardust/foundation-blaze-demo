@@ -1,0 +1,33 @@
+<template name="Containers">
+  <h2>Containers</h2>
+
+  <!-- <h3>Accordion</h3> -->
+  {{! zfAccordion}}
+
+  <h3>Dropdown</h3>
+  {{#zfDropdown text='dropdown' id='dropdown'}}
+    Dropdown
+  {{/zfDropdown}}
+
+  <!-- <h3>Off-canvas</h3> -->
+  {{! zfOffCanvas}}
+
+  <h3>Reveal</h3>
+  {{> zfRevealLink id='reveal' text='reveal link'}}
+  {{> zfRevealButton id='reveal' text='reveal button'}}
+  {{#zfRevealLinkBlock id='reveal'}}
+    reveal link block
+  {{/zfRevealLinkBlock}}
+  {{#zfRevealButtonBlock id='reveal'}}
+    reveal button block
+  {{/zfRevealButtonBlock}}
+  {{#zfRevealModal id='reveal'}}
+    Reveal
+  {{/zfRevealModal}}
+
+  <!-- <h3>Table</h3> -->
+  {{! zfTable}}
+
+  <!-- <h3>Tabs</h3> -->
+  {{! zfTabs}}
+</template>

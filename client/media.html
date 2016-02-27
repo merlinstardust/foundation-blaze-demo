@@ -1,0 +1,24 @@
+<template name="Media">
+  <h2>Media</h2>
+
+  <h3>Orbit</h3>
+  {{> zfOrbit slides=slides template='Slide'}}
+
+  <h3>Progress Bar</h3>
+  {{> zfProgressBar progress=50}}
+
+  <h3>Tooltip</h3>
+  {{#zfTooltip tip='Tooltip'}}
+    Tooltip
+  {{/zfTooltip}}
+</template>
+
+<template name="Slide">
+  <h2>{{header}}</h2>
+  <p>{{text}}</p>
+</template>
+
+<template name="SlideOverwrite">
+  <h2>{{header}}</h2>
+  <h3>{{text}}</h3>
+</template>

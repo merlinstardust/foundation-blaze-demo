@@ -1,0 +1,40 @@
+<template name="Navigation">
+  <h2>Navigation</h2>
+
+  <!-- <h3>Accordion Menu</h3> -->
+  {{! zfAccordionMenu }}
+
+  <!-- <h3>Breadcrumbs</h3> -->
+  {{! zfBreadcrumbs}}
+
+  <!-- <h3>Drilldown Menu</h3> -->
+  {{! zfDrilldown}}
+
+  <h3>Dropdown Menu</h3>
+  <div class="row">
+    <div class="small-6 columns">
+      <h4>Horizontal</h4>
+      {{#zfDropdownMenu}}
+        {{#zfSubMenu text='Item 1'}}
+          <li><a href="#">Item 1A</a></li>
+        {{/zfSubMenu}}
+        <li><a href="#">Item 2</a></li>
+      {{/zfDropdownMenu}}
+    </div>
+    <div class="small-6 columns">
+      <h4>Vertical</h4>
+      {{#zfDropdownMenu vertical=true}}
+        {{#zfSubMenu text='Item 1'}}
+          <li><a href="#">Item 1A</a></li>
+        {{/zfSubMenu}}
+        <li><a href="#">Item 2</a></li>
+      {{/zfDropdownMenu}}
+    </div>
+  </div>
+
+  <!-- <h3>Magellan</h3> -->
+  {{! zfMagellan}}
+
+  <!-- <h3>Pagination</h3> -->
+  {{! zfPagination}}
+</template>
